@@ -1,0 +1,6 @@
+:root { --background: #f5f5f1; --foreground: #202020; }
+* { box-sizing: border-box; padding: 0; margin: 0; }
+html { min-height: 100%; background: var(--background); }
+body { min-height: 100%; color: var(--foreground); background: var(--background); font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+button, input, textarea { font-family: inherit; }
+button:focus-visible { outline: 3px solid #9dcc2c; outline-offset: 3px; }

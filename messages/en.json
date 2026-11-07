@@ -1,0 +1,6 @@
+{
+  "Nav": {"home":"Home","workouts":"Workouts","library":"Library","profile":"Profile","settings":"Settings"},
+  "App": {"greeting":"Good day, {name}","progressToday":"YOUR PROGRESS TODAY","level":"Level {level}"},
+  "Language": {"label":"Interface language","ru":"Русский","kk":"Қазақша","en":"English"},
+  "Carousel": {"eyebrow":"NEW FOR YOU","title":"Keep moving forward","previous":"Previous slide","next":"Next slide","items":{"pull":"Polish your form","pullMeta":"5 min · Pull-ups","core":"Build core strength","coreMeta":"8 min · Basics","mobility":"Restore mobility","mobilityMeta":"6 min · Mobility"}}
+}

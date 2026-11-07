@@ -1,0 +1,2 @@
+.field { display:grid; gap:8px; color:#5d5d5a; font-size:12px; font-weight:700; }
+.field input { width:100%; border:1px solid #deded8; border-radius:11px; background:#fff; color:#222; padding:13px 14px; outline:none; font:600 15px inherit; transition:border-color .2s, box-shadow .2s; &:focus { border-color:#9acd29; box-shadow:0 0 0 3px #b9ff393d; } &::placeholder { color:#aaa; font-weight:500; } }
