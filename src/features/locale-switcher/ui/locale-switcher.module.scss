@@ -1,2 +1,4 @@
-.switcher { display:flex; align-items:center; gap:5px; padding:4px 7px; border:1px solid #e1e1db; border-radius:10px; background:#fff; color:#777; }.switcher select { min-width:86px; border:0; outline:0; background:transparent; color:#333; cursor:pointer; font:700 11px inherit; }.switcher option { color:#222; }
-@media (max-width: 520px) { .switcher > svg { display:none; }.switcher{padding:4px}.switcher select{min-width:71px} }
+.localeSwitcher { display:flex; align-items:center; gap:5px; padding:4px 7px; border:1px solid #e1e1db; border-radius:10px; background:#fff; color:#777;
+  &__select { min-width:86px; border:0; outline:0; background:transparent; color:#333; cursor:pointer; font:700 11px inherit; }
+}
+@media (max-width:520px) { .localeSwitcher { padding:4px; &__icon { display:none; } &__select { min-width:71px; } } }
