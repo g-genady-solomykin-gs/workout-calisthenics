@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { LocaleProvider } from "@/shared/i18n/locale-provider";
+import { ProfileProvider } from "@/shared/model/profile-provider";
+import { OnboardingGate } from "@/widgets/onboarding/ui/onboarding-gate";
 import "./globals.scss";
 
 export const metadata: Metadata = {
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ru">
-      <body><LocaleProvider>{children}</LocaleProvider></body>
+      <body><LocaleProvider><ProfileProvider><OnboardingGate>{children}</OnboardingGate></ProfileProvider></LocaleProvider></body>
     </html>
   );
 }
