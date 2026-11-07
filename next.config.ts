@@ -4,6 +4,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
+  basePath: process.env.GITHUB_PAGES === "true" ? "/workout-calisthenics" : undefined,
   experimental: {
     useTypeScriptCli: false,
   },
