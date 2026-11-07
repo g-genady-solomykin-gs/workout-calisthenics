@@ -1,6 +1,5 @@
-.logo { background: none; border: 0; color: #fff; display: inline-flex; align-items: center; gap: 9px; font-size: 19px; font-weight: 850; letter-spacing: -1px; cursor: pointer; width: fit-content; text-decoration:none; }
-.logo > span:last-child > span { color: #b9ff39; }
-.mark { width: 28px; height: 28px; display:grid; place-items:center; border-radius: 8px 8px 8px 2px; background:#b9ff39; color:#151515; font-size:16px; font-style:italic; }
-.dark { color:#202020; font-size:16px; }
-.dark .mark { width:25px; height:25px; font-size:14px; }
-.compact { gap:0; width:31px; height:31px; display:grid; place-items:center; border-radius:10px; background:#edf7d2; }.compact > span:last-child { display:none; }.compact .mark { width:27px; height:27px; border-radius:8px 8px 8px 3px; }
+.appLogo { background:none; border:0; color:#fff; display:inline-flex; align-items:center; gap:9px; font-size:19px; font-weight:850; letter-spacing:-1px; cursor:pointer; width:fit-content; text-decoration:none;
+  &__mark { width:28px; height:28px; display:grid; place-items:center; border-radius:8px 8px 8px 2px; background:#b9ff39; color:#151515; font-size:16px; font-style:italic; }
+  &--dark { color:#202020; font-size:16px; .appLogo__mark { width:25px; height:25px; font-size:14px; } }
+  &--compact { gap:0; width:31px; height:31px; display:grid; place-items:center; border-radius:10px; background:#edf7d2; .appLogo__word { display:none; } .appLogo__mark { width:27px; height:27px; border-radius:8px 8px 8px 3px; } }
+}

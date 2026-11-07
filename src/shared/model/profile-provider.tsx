@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, type ReactNode, useContext, useMemo, useSyncExternalStore } from "react";
+import { createContext, type ReactNode, useContext, useEffect, useMemo, useSyncExternalStore } from "react";
 import { type WorkoutProfile, parseStoredProfile, profileStorageEvent, profileStorageKey, saveStoredProfile } from "@/shared/lib/profile/profile-storage";
 
 type ProfileContextValue = {
@@ -26,6 +26,10 @@ function getSnapshot() {
 }
 
 export function ProfileProvider({ children }: { children: ReactNode }) {
+  useEffect(() => {
+    console.log(1234555);
+  }, []);
+
   const snapshot = useSyncExternalStore(subscribe, getSnapshot, () => serverSnapshot);
   const ready = snapshot !== serverSnapshot;
   const profile = useMemo(() => ready ? parseStoredProfile(snapshot) : null, [ready, snapshot]);
